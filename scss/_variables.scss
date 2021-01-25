@@ -1,0 +1,16 @@
+$orange: #ff5722;
+$light-orange: lighten(#ff5722, 16%);
+$dark: #04004d;
+$light: #ffffff;
+$blue: #1abcfe;
+$gray: #848199;
+$primary-radial: radial-gradient(
+  51.47% 176.7% at 50% 48.53%,
+  rgba(26, 188, 254, 0.66) 0%,
+  #f9f3ea 96.87%
+);
+$primary-linear: linear-gradient(93.74deg, #eee0ca 0%, #f9f3ea 100%);
+
+//Fonts
+$font-title: "Playfair Display", sans-serif;
+$font-primary: "Poppins", sans-serif;

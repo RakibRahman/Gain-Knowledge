@@ -5,7 +5,6 @@
   padding: 0;
   box-sizing: inherit;
 }
-
 h1,
 h2,
 h3,
@@ -24,27 +23,17 @@ img {
 li {
   list-style: none;
 }
-
 html {
-  font-size: 62.5%;
+  font-size: 62.5%; //10px = 1rem
   box-sizing: border-box;
-}
 
-@media screen and (max-width: 600px) {
-  html {
+  @include responsive(mobile) {
     font-size: 43.75%;
   }
-}
-
-@media screen and (max-width: 960px) {
-  html {
+  @include responsive(tablet) {
     font-size: 50%;
   }
-}
-
-@media screen and (max-width: 1400px) {
-  html {
+  @include responsive(pc) {
     font-size: 56.25%;
   }
 }
-/*# sourceMappingURL=style.css.map */
