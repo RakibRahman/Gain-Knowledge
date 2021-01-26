@@ -1,10 +1,11 @@
-%h-tag {
+@mixin h-tag {
   color: $dark;
-  word-spacing: 2px;
-  line-height: 1.5;
+  word-spacing: 1px;
+  font-family: $font-title;
 }
-%p-tag {
+@mixin p-tag {
   color: $gray;
   line-height: 1.65;
   word-spacing: 2px;
+  font-family: $font-primary;
 }

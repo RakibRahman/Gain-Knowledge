@@ -267,4 +267,78 @@ Table of Contents
     flex: 1 1 80%;
   }
 }
+
+.hero {
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: cover;
+  padding: 5rem 3rem 10rem;
+}
+
+@media screen and (min-width: 48em) {
+  .hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 62em) {
+  .hero {
+    flex-direction: row;
+  }
+}
+
+.hero__wrapper {
+  flex: 1 1 40%;
+}
+
+.hero__wrapper h1 {
+  color: #04004d;
+  word-spacing: 1px;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 5rem;
+  text-align: left;
+}
+
+.hero__wrapper h1 span {
+  color: #ff5722;
+}
+
+.hero__wrapper p {
+  color: #848199;
+  line-height: 1.65;
+  word-spacing: 2px;
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-top: 1rem;
+}
+
+.hero__wrapper p::first-letter {
+  font-size: 4rem;
+}
+
+.hero__wrapper p span {
+  color: #1abcfe;
+}
+
+.hero__img {
+  flex: 1 1 60%;
+  cursor: pointer;
+  display: none;
+}
+
+.hero__img img {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 48em) {
+  .hero__img {
+    display: block;
+  }
+}
 /*# sourceMappingURL=style.css.map */

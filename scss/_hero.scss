@@ -1,0 +1,56 @@
+.hero {
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: cover;
+  padding: 5rem 3rem 10rem;
+
+  //mQ
+  @include responsive(tablet) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  @include responsive(pc) {
+    flex-direction: row;
+  }
+
+  &__wrapper {
+    flex: 1 1 40%;
+
+    h1 {
+      @include h-tag;
+      font-size: 5rem;
+      text-align: left;
+      & span {
+        color: $orange;
+      }
+    }
+    p {
+      @include p-tag;
+      font-size: 2rem;
+      font-weight: bolder;
+      margin-top: 1rem;
+
+      &::first-letter {
+        font-size: 4rem;
+      }
+      & span {
+        color: $blue;
+      }
+    }
+  }
+  &__img {
+    flex: 1 1 60%;
+    cursor: pointer;
+    display: none;
+    & img {
+      max-width: 100%;
+    }
+    @include responsive(tablet) {
+      display: block;
+    }
+  }
+}
