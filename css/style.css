@@ -341,4 +341,34 @@ Table of Contents
     display: block;
   }
 }
+
+.media {
+  margin: 10rem 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media screen and (min-width: 48em) {
+  .media {
+    flex-direction: row;
+  }
+}
+
+.media div:not(:last-child) {
+  margin-top: 5rem;
+}
+
+.media div img {
+  max-width: 100%;
+  filter: drop-shadow(1px 1px 1px #1abcfe);
+}
+
+@media screen and (min-width: 48em) {
+  .media div:not(:last-child) {
+    margin-top: 0;
+  }
+}
 /*# sourceMappingURL=style.css.map */

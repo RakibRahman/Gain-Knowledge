@@ -1,0 +1,30 @@
+.media {
+  margin: 10rem 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  //mQ
+  @include responsive(tablet) {
+    flex-direction: row;
+  }
+
+  & div {
+    &:not(:last-child) {
+      margin-top: 5rem;
+    }
+    & img {
+      max-width: 100%;
+      filter: drop-shadow(1px 1px 1px $blue);
+    }
+
+    //mQ
+    @include responsive(tablet) {
+      &:not(:last-child) {
+        margin-top: 0;
+      }
+    }
+  }
+}
