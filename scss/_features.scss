@@ -1,0 +1,14 @@
+.features {
+  margin: 5rem 0;
+  &__intro {
+    text-align: center;
+    & h1 {
+      @include h-tag;
+      font-size: 3.5rem;
+    }
+    & p {
+      @include p-tag;
+      font-size: 2rem;
+    }
+  }
+}
