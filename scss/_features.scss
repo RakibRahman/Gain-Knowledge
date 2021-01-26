@@ -10,5 +10,65 @@
       @include p-tag;
       font-size: 2rem;
     }
+    //mQ
+    @include responsive(tablet) {
+      padding: 0rem 14rem;
+      margin-bottom: 5rem;
+    }
+    @include responsive(pc) {
+      & p {
+        margin: 0 auto;
+        width: 50ch;
+      }
+    }
+  }
+  //cards
+  .cards {
+    cursor: pointer;
+    margin: 5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    //mQ
+    @include responsive(tablet) {
+      padding: 1rem 4rem;
+    }
+
+    &__content {
+      width: 300px;
+      height: 400px;
+      border: 3px solid $gray;
+      font-size: 2rem;
+      display: grid;
+      place-content: center;
+      text-align: center;
+      grid-gap: 1rem;
+      border-radius: 10px;
+      padding: 2rem 3rem;
+      transition: transform 0.3s ease-in;
+
+      & img {
+        width: 100%;
+        max-width: 100px;
+        background: $orange;
+        border-radius: 50%;
+        padding: 3rem;
+      }
+      &--2 {
+        color: $light;
+        background: $orange;
+      }
+      @include responsive(pc) {
+        &--2 {
+          margin-bottom: 8rem;
+        }
+      }
+      &:hover {
+        transform: translateY(-5px);
+      }
+    }
   }
 }
