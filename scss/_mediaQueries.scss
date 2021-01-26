@@ -1,21 +1,16 @@
-@mixin responsive($breakpoint) {
-  @if $breakpoint == mobile {
-    @media screen and (max-width: 600px) {
+@mixin responsive($device) {
+  @if $device == mobile {
+    @media screen and (min-width: 20em) {
       @content;
     }
   }
-  @if $breakpoint == tablet {
-    @media screen and (max-width: 960px) {
+  @if $device == tablet {
+    @media screen and (min-width: 48em) {
       @content;
     }
   }
-  @if $breakpoint == pc {
-    @media screen and (max-width: 1400px) {
-      @content;
-    }
-  }
-  @if $breakpoint == four-k {
-    @media screen and (min-width: 1401px) {
+  @if $device == pc {
+    @media screen and (min-width: 62em) {
       @content;
     }
   }
