@@ -565,6 +565,8 @@ Table of Contents
 
 @media screen and (min-width: 62em) {
   .class .cards .card {
+    display: grid;
+    place-content: center;
     height: 485px;
   }
 }
