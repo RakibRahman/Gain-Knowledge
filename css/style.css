@@ -28,6 +28,7 @@ li {
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 @media screen and (min-width: 20em) {
@@ -344,7 +345,7 @@ Table of Contents
 
 .media {
   margin: 10rem 0;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -355,6 +356,10 @@ Table of Contents
   .media {
     flex-direction: row;
   }
+}
+
+.media div {
+  cursor: pointer;
 }
 
 .media div:not(:last-child) {
@@ -460,5 +465,182 @@ Table of Contents
 
 .features .cards__content:hover {
   transform: translateY(-5px);
+}
+
+.class {
+  margin: 2rem 0;
+  padding: 5rem 2rem;
+}
+
+@media screen and (min-width: 48em) {
+  .class__intro {
+    padding: 0 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.class__intro-info h1 {
+  color: #04004d;
+  word-spacing: 1px;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 4rem;
+}
+
+.class__intro-info p {
+  color: #848199;
+  line-height: 1.65;
+  word-spacing: 2px;
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+.class__intro-select select {
+  width: 60px;
+  padding: 5px 10px;
+  font-size: 16px;
+  line-height: 1;
+  border: 1px solid #848199;
+  border-radius: 5px;
+  color: #ff5722;
+  background: url(/img/arrow.png) no-repeat right #ffffff;
+  appearance: none;
+  background-size: 20px;
+  background-position-x: 35px;
+  cursor: pointer;
+}
+
+.class__intro-select button {
+  margin-left: 1rem;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  outline: 0;
+  background: #ff5722;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 48em) {
+  .class__intro-select {
+    display: flex;
+    justify-content: end;
+    flex-basis: 100%;
+  }
+}
+
+.class .cards {
+  margin: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 48em) {
+  .class .cards {
+    gap: 10rem;
+  }
+}
+
+.class .cards .card {
+  width: 310px;
+  text-align: left;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: #ffffff;
+  color: #04004d;
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 10px;
+  box-shadow: 0px 2px 8px 0px #1abcfe;
+  position: relative;
+}
+
+@media screen and (min-width: 62em) {
+  .class .cards .card {
+    height: 485px;
+  }
+}
+
+.class .cards .card__content {
+  cursor: pointer;
+  padding: 1rem 3rem;
+}
+
+.class .cards .card__bg {
+  text-align: center;
+  font-size: 4rem;
+  color: #ffffff;
+  position: absolute;
+  height: 25rem;
+  line-height: 25rem;
+  width: 100%;
+  background-image: url("/img/class/ux.png");
+  background-color: darkgray;
+  background-blend-mode: color-burn;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.class .cards .card__bg--2 {
+  background-image: url("/img/class/illustration.png");
+}
+
+.class .cards .card__bg--3 {
+  background-image: url("/img/class/photography.png");
+}
+
+.class .cards .card__rating {
+  margin-top: 26rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.class .cards .card__rating .checked {
+  color: orange;
+}
+
+.class .cards .card__rating .checked strong {
+  color: #04004d;
+}
+
+.class .cards .card__rating .fa-fire {
+  color: red;
+  font-size: 2rem;
+}
+
+.class .cards .card h2 {
+  margin: 2rem 0;
+}
+
+.class .cards .card p {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.class .cards .card__students {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.class .cards .card__students button {
+  background: rgba(255, 149, 116, 0.5);
+  border: 0;
+  outline: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  color: #ff5722;
+  font-size: 2rem;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
