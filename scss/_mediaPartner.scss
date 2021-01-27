@@ -1,6 +1,6 @@
 .media {
   margin: 10rem 0;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -12,6 +12,7 @@
   }
 
   & div {
+    cursor: pointer;
     &:not(:last-child) {
       margin-top: 5rem;
     }
