@@ -87,6 +87,8 @@
 
       //mQ
       @include responsive(pc) {
+        display: grid;
+        place-content: center;
         height: 485px;
       }
 
