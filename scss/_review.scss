@@ -1,0 +1,61 @@
+.review {
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 1rem;
+
+  &__intro {
+    text-align: center;
+    font-size: 2rem;
+    margin: 20px 0;
+
+    & p {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 220px);
+    grid-gap: 1rem;
+    place-content: center;
+
+    //mQ
+    @include responsive(tablet) {
+      grid-template-columns: repeat(2, 300px);
+    }
+    @include responsive(pc) {
+      grid-template-columns: repeat(3, 300px);
+      grid-gap: 2rem;
+    }
+  }
+  &__card {
+    padding: 2rem;
+    border: 1px solid $gray;
+    background: lighten(#a3c4c2, 20%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    font-size: 1.5rem;
+    height: 280px;
+
+    & h3 {
+      color: $orange;
+      & span {
+        color: $gray;
+      }
+    }
+    & p span {
+      color: $orange;
+      margin-bottom: 10px;
+    }
+  }
+  &__card-img {
+    & img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+  }
+}

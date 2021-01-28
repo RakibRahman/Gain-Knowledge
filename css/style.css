@@ -740,4 +740,72 @@ Table of Contents
     width: 90%;
   }
 }
+
+.review {
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.review__intro {
+  text-align: center;
+  font-size: 2rem;
+  margin: 20px 0;
+}
+
+.review__intro p {
+  font-size: 1.5rem;
+}
+
+.review__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 220px);
+  grid-gap: 1rem;
+  place-content: center;
+}
+
+@media screen and (min-width: 48em) {
+  .review__wrapper {
+    grid-template-columns: repeat(2, 300px);
+  }
+}
+
+@media screen and (min-width: 62em) {
+  .review__wrapper {
+    grid-template-columns: repeat(3, 300px);
+    grid-gap: 2rem;
+  }
+}
+
+.review__card {
+  padding: 2rem;
+  border: 1px solid #848199;
+  background: #e1eceb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 1.5rem;
+  height: 280px;
+}
+
+.review__card h3 {
+  color: #ff5722;
+}
+
+.review__card h3 span {
+  color: #848199;
+}
+
+.review__card p span {
+  color: #ff5722;
+  margin-bottom: 10px;
+}
+
+.review__card-img img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
 /*# sourceMappingURL=style.css.map */
