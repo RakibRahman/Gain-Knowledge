@@ -469,7 +469,13 @@ Table of Contents
 
 .class {
   margin: 2rem 0;
-  padding: 5rem 2rem;
+  padding: 5rem;
+}
+
+@media screen and (min-width: 62em) {
+  .class {
+    padding: 5rem 15rem;
+  }
 }
 
 @media screen and (min-width: 48em) {
