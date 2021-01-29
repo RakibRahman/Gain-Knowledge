@@ -1,0 +1,82 @@
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+  font-size: 2rem;
+  font-family: $font-primary;
+  padding: 1rem 6rem;
+  background: $primary-linear;
+
+  @include responsive(tablet) {
+    flex-direction: row;
+    padding: 1rem 20rem;
+  }
+  &__content-1 {
+    @include responsive(tablet) {
+      width: 40%;
+    }
+  }
+  &__part-1 {
+    & > * {
+      margin: 2rem 0;
+    }
+    & .logo {
+      width: 150px;
+      height: 20px;
+      margin-bottom: 0;
+    }
+    & ul {
+      & img {
+        width: 30px;
+      }
+      & li {
+        margin-bottom: 2rem;
+        & > * {
+          vertical-align: middle;
+        }
+      }
+    }
+    & .icons {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      & img {
+        cursor: pointer;
+        width: 30px;
+      }
+    }
+  }
+
+  //part 2
+  &__content-2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    @include responsive(tablet) {
+      gap: 4rem;
+    }
+    & div {
+      & > * {
+        cursor: pointer;
+        margin: 2rem 0;
+      }
+    }
+  }
+}
+.footer-last {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $primary-linear;
+  border-top: 2px solid goldenrod;
+  padding: 1rem 6rem;
+  gap: 2rem;
+  cursor: pointer;
+
+  @include responsive(tablet) {
+    padding: 1rem 20rem;
+  }
+}
