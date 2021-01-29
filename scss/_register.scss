@@ -1,0 +1,42 @@
+.register {
+  &__intro {
+    margin: 2rem 0;
+    padding: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    & h1 {
+      @include h-tag;
+      text-transform: capitalize;
+    }
+    & p {
+      @include p-tag;
+    }
+  }
+  &__map {
+    max-width: 100%;
+    margin: 2rem 0;
+  }
+  &__banner {
+    border-radius: 6px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 5rem;
+    color: $light;
+    text-align: center;
+    font-size: 2rem;
+    background: darken($color: $blue, $amount: 30%);
+    margin-bottom: 2rem;
+  }
+  &__btn {
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+    background: $orange;
+    border: 1px solid $orange;
+    color: $light;
+
+    &--2 {
+      background: transparent;
+      color: $orange;
+    }
+  }
+}

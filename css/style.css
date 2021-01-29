@@ -953,4 +953,55 @@ Table of Contents
   color: #ff5722;
   cursor: pointer;
 }
+
+.register__intro {
+  margin: 2rem 0;
+  padding: 2rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.register__intro h1 {
+  color: #04004d;
+  word-spacing: 1px;
+  font-family: "Playfair Display", sans-serif;
+  text-transform: capitalize;
+}
+
+.register__intro p {
+  color: #848199;
+  line-height: 1.65;
+  word-spacing: 2px;
+  font-family: "Poppins", sans-serif;
+}
+
+.register__map {
+  max-width: 100%;
+  margin: 2rem 0;
+}
+
+.register__banner {
+  border-radius: 6px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 5rem;
+  color: #ffffff;
+  text-align: center;
+  font-size: 2rem;
+  background: #015a7e;
+  margin-bottom: 2rem;
+}
+
+.register__btn {
+  margin: 2rem 0;
+  padding: 1rem 2rem;
+  background: #ff5722;
+  border: 1px solid #ff5722;
+  color: #ffffff;
+}
+
+.register__btn--2 {
+  background: transparent;
+  color: #ff5722;
+}
 /*# sourceMappingURL=style.css.map */
