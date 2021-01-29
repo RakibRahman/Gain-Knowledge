@@ -78,5 +78,11 @@
 
   @include responsive(tablet) {
     padding: 1rem 20rem;
+
+    & span {
+      &:nth-child(2) {
+        margin-left: 6rem;
+      }
+    }
   }
 }

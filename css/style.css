@@ -1096,5 +1096,8 @@ Table of Contents
   .footer-last {
     padding: 1rem 20rem;
   }
+  .footer-last span:nth-child(2) {
+    margin-left: 6rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
