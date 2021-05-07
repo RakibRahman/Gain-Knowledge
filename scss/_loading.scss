@@ -326,3 +326,73 @@
     }
   }
 }
+
+#modal {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 400px;
+  height: 220px;
+  background: $light;
+  transition: 1s;
+  border-radius: 10px;
+  padding: 1rem;
+  border: 2px solid $gray;
+  overflow: hidden;
+  transition: all 1s ease-in;
+  & #close {
+    position: absolute;
+    top: 10;
+    right: 10px;
+    cursor: pointer;
+    background: none;
+    border: 0;
+    & img {
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+      &:hover {
+        background: red;
+        border-radius: 100%;
+      }
+    }
+  }
+  .info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  & .content {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    & h3:first-child {
+      color: $blue;
+      cursor: pointer;
+    }
+    & > * {
+      margin-bottom: 10px;
+    }
+    & button {
+      text-transform: uppercase;
+
+      padding: 5px 8px;
+      background: $orange;
+      border: none;
+      border-radius: 3px;
+      font-weight: bold;
+      color: $light;
+      transition: transform 0.2s;
+      cursor: pointer;
+      &:hover {
+        transform: translateY(-3px);
+      }
+    }
+  }
+  & img {
+    padding: 5px;
+    width: 200px;
+  }
+}
