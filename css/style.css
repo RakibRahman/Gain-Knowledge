@@ -503,7 +503,7 @@ Table of Contents
   left: 0;
   z-index: 1;
   width: 100vw;
-  height: 60vh;
+  height: 65vh;
   background: #ffffff;
   transform: translateY(-100vh);
   transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -602,7 +602,6 @@ Table of Contents
 
 .hero {
   background: #e0e0e0;
-  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
   background-repeat: no-repeat;
   background-position: top right;
   background-size: cover;
@@ -629,9 +628,10 @@ Table of Contents
 }
 
 .hero__wrapper h1 {
-  color: #04004d;
+  color: #ff5722;
   word-spacing: 1px;
   font-family: "Playfair Display", sans-serif;
+  font-size: 4rem;
   font-size: 5rem;
   text-align: left;
 }
@@ -717,10 +717,12 @@ Table of Contents
 }
 
 .features__intro h1 {
-  color: #04004d;
+  color: #ff5722;
   word-spacing: 1px;
   font-family: "Playfair Display", sans-serif;
-  font-size: 3.5rem;
+  font-size: 4rem;
+  font-size: 4rem;
+  color: #ff5722;
 }
 
 .features__intro p {
@@ -819,9 +821,10 @@ Table of Contents
 }
 
 .class__intro-info h1 {
-  color: #04004d;
+  color: #ff5722;
   word-spacing: 1px;
   font-family: "Playfair Display", sans-serif;
+  font-size: 4rem;
   font-size: 4rem;
 }
 
@@ -898,6 +901,11 @@ Table of Contents
   padding-bottom: 10px;
   box-shadow: 0px 2px 8px 0px #1abcfe;
   position: relative;
+}
+
+.class .cards .card:hover {
+  animation: pulse;
+  animation-duration: 1s;
 }
 
 @media screen and (min-width: 62em) {
@@ -999,11 +1007,13 @@ Table of Contents
 }
 
 .provide__intro h1 {
-  color: #04004d;
+  color: #ff5722;
   word-spacing: 1px;
   font-family: "Playfair Display", sans-serif;
   font-size: 4rem;
+  font-size: 4rem;
   margin: 1rem 0;
+  cursor: pointer;
 }
 
 .provide__intro p {
@@ -1013,6 +1023,7 @@ Table of Contents
   font-family: "Poppins", sans-serif;
   font-size: 2rem;
   margin-bottom: 1rem;
+  color: #848199;
 }
 
 .provide__content {
@@ -1039,17 +1050,24 @@ Table of Contents
 .provide__content-img img {
   border-radius: 4px;
   max-width: 100%;
+  cursor: pointer;
+}
+
+.provide__content-img img:hover {
+  animation: swing;
+  animation-duration: 0.5s;
 }
 
 .provide__content-info {
   flex: 1 1 50%;
+  color: #ff5722;
+  word-spacing: 1px;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 4rem;
   color: #848199;
   line-height: 1.65;
   word-spacing: 2px;
   font-family: "Poppins", sans-serif;
-  color: #04004d;
-  word-spacing: 1px;
-  font-family: "Playfair Display", sans-serif;
   font-size: 1.5rem;
   line-height: 1.65;
 }
@@ -1085,8 +1103,13 @@ Table of Contents
   margin: 20px 0;
 }
 
+.review__intro h1 {
+  font-size: 4rem;
+  cursor: pointer;
+}
+
 .review__intro p {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .review__wrapper {
@@ -1112,6 +1135,7 @@ Table of Contents
 .review__card {
   padding: 2rem;
   border: 1px solid #848199;
+  border-radius: 3px;
   background: #e1eceb;
   display: flex;
   align-items: center;
@@ -1119,6 +1143,12 @@ Table of Contents
   gap: 1rem;
   font-size: 1.5rem;
   height: 280px;
+  cursor: pointer;
+}
+
+.review__card:hover {
+  animation-name: pulse;
+  animation-duration: 0.8s;
 }
 
 .review__card h3 {
@@ -1149,10 +1179,11 @@ Table of Contents
 }
 
 .subscription__intro h1 {
-  color: #04004d;
+  color: #ff5722;
   word-spacing: 1px;
   font-family: "Playfair Display", sans-serif;
-  font-size: 3.5rem;
+  font-size: 4rem;
+  font-size: 4rem;
 }
 
 .subscription__intro p {
@@ -1160,7 +1191,7 @@ Table of Contents
   line-height: 1.65;
   word-spacing: 2px;
   font-family: "Poppins", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .subscription__intro div {
@@ -1293,9 +1324,10 @@ Table of Contents
 }
 
 .register__intro h1 {
-  color: #04004d;
+  color: #ff5722;
   word-spacing: 1px;
   font-family: "Playfair Display", sans-serif;
+  font-size: 4rem;
   text-transform: capitalize;
 }
 
@@ -1304,6 +1336,20 @@ Table of Contents
   line-height: 1.65;
   word-spacing: 2px;
   font-family: "Poppins", sans-serif;
+}
+
+.register__intro img {
+  border-radius: 4px;
+  border: 1px solid #ff5722;
+  cursor: pointer;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.register__intro img:hover {
+  filter: hue-rotate(90deg);
+  animation: animate__bounce;
+  animation-duration: 2s;
 }
 
 .register__map {
@@ -1324,6 +1370,7 @@ Table of Contents
 }
 
 .register__btn {
+  cursor: pointer;
   margin: 2rem 0;
   padding: 1rem 2rem;
   background: #ff5722;
@@ -1334,6 +1381,11 @@ Table of Contents
 .register__btn--2 {
   background: transparent;
   color: #ff5722;
+}
+
+.register__btn--2:hover {
+  color: #ffffff;
+  border: 1px solid #ffffff;
 }
 
 .footer {
@@ -1372,6 +1424,8 @@ Table of Contents
 
 .footer__part-1 ul img {
   width: 30px;
+  background: #ffffff;
+  border-radius: 50%;
 }
 
 .footer__part-1 ul li {
@@ -1389,6 +1443,8 @@ Table of Contents
 }
 
 .footer__part-1 .icons img {
+  background: #ffffff;
+  border-radius: 50%;
   cursor: pointer;
   width: 30px;
 }
@@ -1404,6 +1460,20 @@ Table of Contents
   .footer__content-2 {
     gap: 4rem;
   }
+}
+
+.footer__content-2 h3 {
+  transition: all 0.2s;
+  letter-spacing: 2px;
+}
+
+.footer__content-2 h3:hover {
+  color: #ff5722;
+}
+
+.footer__content-2 li:hover {
+  text-decoration: underline;
+  text-decoration-color: #1abcfe;
 }
 
 .footer__content-2 div > * {

@@ -4,11 +4,11 @@
     text-align: center;
     & h1 {
       @include h-tag;
-      font-size: 3.5rem;
+      font-size: 4rem;
     }
     & p {
       @include p-tag;
-      font-size: 1.5rem;
+      font-size: 1.8rem;
     }
     & div {
       margin-top: 1rem;

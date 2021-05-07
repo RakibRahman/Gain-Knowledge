@@ -11,6 +11,19 @@
     & p {
       @include p-tag;
     }
+    & img {
+      border-radius: 4px;
+      border: 1px solid $orange;
+      cursor: pointer;
+      transition: 0.3s;
+      display: inline-block;
+
+      &:hover {
+        filter: hue-rotate(90deg);
+        animation: animate__bounce;
+        animation-duration: 2s;
+      }
+    }
   }
   &__map {
     max-width: 100%;
@@ -28,6 +41,8 @@
     margin-bottom: 2rem;
   }
   &__btn {
+    cursor: pointer;
+
     margin: 2rem 0;
     padding: 1rem 2rem;
     background: $orange;
@@ -37,6 +52,10 @@
     &--2 {
       background: transparent;
       color: $orange;
+      &:hover {
+        color: $light;
+        border: 1px solid $light;
+      }
     }
   }
 }

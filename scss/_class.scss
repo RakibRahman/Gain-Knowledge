@@ -89,6 +89,10 @@
       position: relative;
 
       //HOVER
+      &:hover {
+        animation: pulse;
+        animation-duration: 1s;
+      }
 
       //mQ
       @include responsive(pc) {

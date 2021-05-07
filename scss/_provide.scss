@@ -1,6 +1,7 @@
 .provide {
   padding: 1rem 4rem;
   margin: 1rem 0rem 3rem;
+
   //mQ
   @include responsive(pc) {
     padding: 5rem 15rem;
@@ -11,11 +12,13 @@
       @include h-tag;
       font-size: 4rem;
       margin: 1rem 0;
+      cursor: pointer;
     }
     & p {
       @include p-tag;
       font-size: 2rem;
       margin-bottom: 1rem;
+      color: $gray;
     }
   }
 
@@ -40,13 +43,20 @@
     & img {
       border-radius: 4px;
       max-width: 100%;
+      cursor: pointer;
+
+      &:hover {
+        animation: swing;
+        animation-duration: 0.5s;
+      }
     }
   }
   &__content-info {
     flex: 1 1 50%;
 
-    @include p-tag;
     @include h-tag;
+    @include p-tag;
+
     font-size: 1.5rem;
     line-height: 1.65;
     & a {

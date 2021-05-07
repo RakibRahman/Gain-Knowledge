@@ -1,7 +1,8 @@
 @mixin h-tag {
-  color: $dark;
+  color: $orange;
   word-spacing: 1px;
   font-family: $font-title;
+  font-size: 4rem;
 }
 @mixin p-tag {
   color: $gray;

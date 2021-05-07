@@ -29,6 +29,8 @@
     & ul {
       & img {
         width: 30px;
+        background: $light;
+        border-radius: 50%;
       }
       & li {
         margin-bottom: 2rem;
@@ -42,6 +44,8 @@
       gap: 1rem;
       align-items: center;
       & img {
+        background: $light;
+        border-radius: 50%;
         cursor: pointer;
         width: 30px;
       }
@@ -56,6 +60,19 @@
     justify-content: space-between;
     @include responsive(tablet) {
       gap: 4rem;
+    }
+    & h3 {
+      transition: all 0.2s;
+      letter-spacing: 2px;
+      &:hover {
+        color: $orange;
+      }
+    }
+    li {
+      &:hover {
+        text-decoration: underline;
+        text-decoration-color: $blue;
+      }
     }
     & div {
       & > * {

@@ -8,9 +8,12 @@
     text-align: center;
     font-size: 2rem;
     margin: 20px 0;
-
+    & h1 {
+      font-size: 4rem;
+      cursor: pointer;
+    }
     & p {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
     }
   }
 
@@ -32,6 +35,7 @@
   &__card {
     padding: 2rem;
     border: 1px solid $gray;
+    border-radius: 3px;
     background: lighten(#a3c4c2, 20%);
     display: flex;
     align-items: center;
@@ -39,6 +43,11 @@
     gap: 1rem;
     font-size: 1.5rem;
     height: 280px;
+    cursor: pointer;
+    &:hover {
+      animation-name: pulse;
+      animation-duration: 0.8s;
+    }
 
     & h3 {
       color: $orange;
