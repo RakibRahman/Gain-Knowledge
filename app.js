@@ -2,15 +2,15 @@
 
 const loadingScreen = document.querySelector("#loading");
 const title = loadingScreen.querySelector(".shakeit");
-loadingScreen.style.display = "none";
+
 function showBody() {
   loadingScreen.style.display = "none";
 }
-// showBody();
+loadingScreen.style.display = "none";
 
 // setTimeout(showBody, 1600);
 
-//dark mode
+//! dark mode
 const body = document.querySelector("body");
 const main = body.querySelector("body main");
 const header = document.querySelector(".header");
@@ -51,10 +51,23 @@ function toggleDarkTheme() {
   }
 }
 
-//! hover animation
+//! display modal
+const modal = document.querySelector("#modal");
+const modalClose = document.querySelector("#modal #close");
+console.log(modalClose);
 
+function toggleModal() {
+  setTimeout(() => {
+    modal.style.display = "block";
+  }, 2100);
+}
+function closeModal() {
+  modal.style.display = "none";
+}
 function init() {
+  // toggleModal();
   toggleIcon.addEventListener("click", toggleDarkTheme);
   toggleIcon2.addEventListener("click", toggleDarkTheme);
+  modalClose.addEventListener("click", closeModal);
 }
 init();
