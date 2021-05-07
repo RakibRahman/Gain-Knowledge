@@ -23,6 +23,7 @@ const register = document.querySelector(".register");
 const footer = document.querySelector(".footer");
 const footerLast = document.querySelector(".footer-last");
 const toggleIcon = document.querySelector("#moon");
+const toggleIcon2 = document.querySelector("#night");
 
 function toggleDarkTheme() {
   body.classList.toggle("dark-theme");
@@ -54,5 +55,6 @@ function toggleDarkTheme() {
 
 function init() {
   toggleIcon.addEventListener("click", toggleDarkTheme);
+  toggleIcon2.addEventListener("click", toggleDarkTheme);
 }
 init();
