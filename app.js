@@ -6,9 +6,8 @@ const title = loadingScreen.querySelector(".shakeit");
 function showBody() {
   loadingScreen.style.display = "none";
 }
-loadingScreen.style.display = "none";
 
-// setTimeout(showBody, 1600);
+setTimeout(showBody, 1600);
 
 //! dark mode
 const body = document.querySelector("body");
@@ -54,20 +53,26 @@ function toggleDarkTheme() {
 //! display modal
 const modal = document.querySelector("#modal");
 const modalClose = document.querySelector("#modal #close");
-console.log(modalClose);
 
 function toggleModal() {
   setTimeout(() => {
     modal.style.display = "block";
-  }, 2100);
+  }, 5100);
 }
 function closeModal() {
   modal.style.display = "none";
 }
+
+//! to the top
+const topBTN = document.querySelector("#toTop");
+function toTop() {
+  window.scrollTo(0, 0);
+}
 function init() {
-  // toggleModal();
+  toggleModal();
   toggleIcon.addEventListener("click", toggleDarkTheme);
   toggleIcon2.addEventListener("click", toggleDarkTheme);
   modalClose.addEventListener("click", closeModal);
+  topBTN.addEventListener("click", toTop);
 }
 init();
